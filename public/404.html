@@ -5,26 +5,31 @@
 
 <head>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-  <title>The page you were looking for doesn't exist (404)</title>
-	<style type="text/css">
-		body { background-color: #fff; color: #666; text-align: center; font-family: arial, sans-serif; }
-		div.dialog {
-			width: 25em;
-			padding: 0 4em;
-			margin: 4em auto 0 auto;
-			border: 1px solid #ccc;
-			border-right-color: #999;
-			border-bottom-color: #999;
-		}
-		h1 { font-size: 100%; color: #f00; line-height: 1.5em; }
-	</style>
+  <title>restfulBlogger | Whoops</title>
 </head>
+<link rel="stylesheet" href="/stylesheets/screen.css" type="text/css" media="screen, projection" />
+<style>
+ body { background: src('/images/errorBg.png') repeat-x #e6e7e8; }
+</style
 
 <body>
-  <!-- This file lives in public/404.html -->
-  <div class="dialog">
-    <h1>The page you were looking for doesn't exist.</h1>
-    <p>You may have mistyped the address or the page may have moved.</p>
-  </div>
+	<div id="ErrorHeader">
+		<img src="/images/logo.png" />
+	</div>
+	<div id="ErrorMessageContainer">
+  	<div class="Dialog">
+	    <h1>Sorry the page was not found...</h1>
+	    <p>If you think you reached this page by error please try refreshing your browser. Otherwise here are some reasons you may have come across this page:</p>
+			<ul>
+				<li>The page you are looking for may have been moved.</li>
+				<li>The page no longer exists.</li>
+				<li>You just like looking at some really nicely designed 404 pages.</li>
+			</ul>
+			<a href="/">Return Home</a>
+	  </div>
+	</div>
+	<div id="ErrorCode">
+		<img src="/images/error404.png" />
+	</div>
 </body>
 </html>

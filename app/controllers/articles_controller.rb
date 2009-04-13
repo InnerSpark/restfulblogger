@@ -1,6 +1,6 @@
 class ArticlesController < ApplicationController
   def index
-    @article = Article.paginate :page => params[:page], :per_page => 10, :order => 'created_at ASC'
+    #@article = Article.paginate :page => params[:page], :per_page => 10, :order => 'created_at ASC'
     
     respond_to do |format|
       format.html
@@ -30,10 +30,11 @@ class ArticlesController < ApplicationController
         if @article.save
           flash[:notice] = 'Article was successfully submitted.'
           format.html { redirect_to  } # Need to finnish the paths
+        end
       end
   end
   
-  def destroy
-    #need to add functions
-  end
+  # def destroy
+  #   #need to add functions
+  # end
 end
